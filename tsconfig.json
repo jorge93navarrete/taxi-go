@@ -4,6 +4,14 @@
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
+    "paths": {
+      "@env/*": ["src/environments/*"],
+      "@core/services/*": ["src/app/services/*"],
+      "@core/components/*": ["src/app/core/components/*"],
+      "@core/*": ["src/app/core/*"],
+      "@core/pipes/*": ["src/app/shared/pipes/*"],
+      "@assets/*": ["src/assets/*"]
+    },
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
