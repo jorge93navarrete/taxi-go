@@ -1,0 +1,15 @@
+.chat-container {
+  clear: both;
+  position: relative;
+}
+
+.chat-container .arrow {
+  width: 30px;
+  height: 12px;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  top: 6px;
+  right: -1px;
+  background-color: red;
+}
