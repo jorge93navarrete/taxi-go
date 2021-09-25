@@ -1,4 +1,9 @@
 <ion-content [fullscreen]="true">
-   <app-chat-in></app-chat-in>
+   <div class="h-75">
+      <app-chat-in *ngFor="let chat of chats" class="ml-5 w-75 " [chat]="chat"></app-chat-in>
+   </div>
+   <div class="bottom-fixed">
+      <app-send-chat (onSend)="send($event)"></app-send-chat>
+   </div>
 
 </ion-content>

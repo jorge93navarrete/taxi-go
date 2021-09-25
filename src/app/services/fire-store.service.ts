@@ -1,15 +1,20 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { from } from 'rxjs';
+import { IChat } from '../chat/models/interfaces/chat.interfaces';
 
 @Injectable({
   providedIn: 'root',
 })
 export class FireStoreService {
+  protected collectionName: string;
+
   constructor(private angularFirestore: AngularFirestore) {}
 
-  public get(collection: string) {
-    return this.angularFirestore.collection(collection).snapshotChanges();
+  protected get() {
+    return this.angularFirestore
+      .collection<IChat>(this.collectionName)
+      .snapshotChanges();
   }
 
   public delete(collection: string, documentId: string) {

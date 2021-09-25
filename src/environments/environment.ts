@@ -5,6 +5,16 @@
 export const environment = {
   production: false,
   apiUrl: 'http://192.168.1.25:8000/api',
+
+  firebaseConfig: {
+    apiKey: 'AIzaSyAZlu7PbTNMfSFg4RqGVunO4c27GiF4XOU',
+    authDomain: 'taxi-go-bce83.firebaseapp.com',
+    projectId: 'taxi-go-bce83',
+    storageBucket: 'taxi-go-bce83.appspot.com',
+    messagingSenderId: '140460129394',
+    appId: '1:140460129394:web:1ceff4e3c942e37dd7d6eb',
+    measurementId: 'G-0K122SW0LJ',
+  },
 };
 
 /*

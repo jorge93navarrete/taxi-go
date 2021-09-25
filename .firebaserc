@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "taxi-go-bce83"
+  },
+  "targets": {
+    "taxi-go-bce83": {
+      "hosting": {
+        "app": [
+          "taxi-go-bce83"
+        ]
+      }
+    }
   }
 }

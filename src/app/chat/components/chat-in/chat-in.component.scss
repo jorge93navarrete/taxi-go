@@ -1,15 +1,13 @@
-.chat-container {
-  clear: both;
-  position: relative;
+$text-color: #10130fcb;
+ion-card {
+  --background: #a4d883e8;
+}
+ion-card-subtitle {
+  color: $text-color !important;
 }
 
-.chat-container .arrow {
-  width: 30px;
-  height: 12px;
-  overflow: hidden;
-  position: relative;
-  float: left;
-  top: 6px;
-  right: -1px;
-  background-color: red;
+ion-card-content {
+  background-color: #aaf76bba;
+  color: $text-color !important;
+  font-family: Verdana !important;
 }
